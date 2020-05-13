@@ -1,8 +1,12 @@
 import pytest
-from src.simple_date import SimpleDate
-from src.person import Person
+import os
 
 def test_exercise():
+    os.chdir('src')
+
+    from simple_date import SimpleDate
+    from person import Person
+
     date = SimpleDate(22, 4, 2016)
     date2 = SimpleDate(21, 6, 2015)
 
